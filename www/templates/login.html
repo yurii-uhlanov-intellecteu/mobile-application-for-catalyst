@@ -1,0 +1,27 @@
+<ion-view>
+           
+    <div class="bar bar-header bar-light bar-block">
+        <h1 class="title">Login</h1>
+    </div>
+            
+    <ion-view title="Login">
+        <ion-content class = "padding has-header">
+            <div class="list-fields">
+                <div class="list">		       
+                    <label class="item item-input">
+                        <input type="text" placeholder="Email" ng-model="user.email"/>		        
+                    </label>
+
+                    <label class="item item-input">
+                        <input type="password" placeholder="Password" ng-model="user.password"/>		        
+                    </label>
+                
+                    <button id="btnSaveContact" class="button button-block button-balanced" ng-click="login(user)">
+                        Login
+                    </button>
+                </div>
+            </div>
+               
+        </ion-content>
+    </ion-view>
+</ion-view>

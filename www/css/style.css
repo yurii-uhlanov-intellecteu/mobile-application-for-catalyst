@@ -1,0 +1,24 @@
+/* Empty. Add your own CSS if you like */
+
+.risk1 {
+  text-align: center !important;
+  font-size: 90% !important;
+  height: 75px !important;
+  line-height: 36px;
+}
+
+.risk2{
+  text-align: center !important;
+  font-size: 90% !important;
+  height: 75px !important;
+}
+
+.pictureTaker{
+  float:right;
+}
+
+.lossAmount{
+  text-align: center !important;
+  line-height: 55px;
+  font-style: italic;
+}
