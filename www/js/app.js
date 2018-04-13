@@ -2,7 +2,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 
-var restUrl = "http://localhost:9999/catalyst/mobile/"
+var restUrl = "http://ec2-34-230-71-5.compute-1.amazonaws.com:9999/catalyst/mobile/"
 
 function setHumanTime(transaction) {
   transaction.created_at = String(new Date(transaction.created_at))
@@ -221,14 +221,14 @@ angular.module('Catalyst', ['ionic'])
         $state.go("login");
       }
       else {
+        document.getElementById("status").innerText = "IN PROGRESS"
+        document.getElementById("decisionButtons").style.display = "none";
         httpResponce = httpGetSendDecision(
           restUrl, 
           $state.appData["user"]["email"], 
-          $state.appData["current_transaction"],
+          $state.appData["current_transaction"]["payment_id"],
           "approved"
         )
-        document.getElementById("status").innerText = "IN PROGRESS"
-        document.getElementById("decisionButtons").style.display = "none";
       }
     }
 
@@ -237,14 +237,14 @@ angular.module('Catalyst', ['ionic'])
         $state.go("login");
       }
       else {
+        document.getElementById("status").innerText = "REJECTED"
+        document.getElementById("decisionButtons").style.display = "none";
         httpResponce = httpGetSendDecision(
           restUrl, 
           $state.appData["user"]["email"], 
-          $state.appData["current_transaction"],
+          $state.appData["current_transaction"]["payment_id"],
           "rejected"
         )
-        document.getElementById("status").innerText = "REJECTED"
-        document.getElementById("decisionButtons").style.display = "none";
       }
     }
   });
