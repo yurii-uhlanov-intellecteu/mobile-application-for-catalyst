@@ -152,8 +152,8 @@
 
 .card-box {
   margin: 0 auto;
-  width: 70%;
-  min-width: 350px;
+  width: 80%;
+  min-width: 280px;
   border-radius: 5px;
   display: flex;
   align-items: stretch;
@@ -274,8 +274,9 @@
 
 .row .button-balanced {
   background-color: green;
-  width: 120px;
+  width: 110px;
   margin-right: 20px;
+  margin-left: -5px;
 
   font-weight: 600;
   font-size: 20px;
@@ -284,7 +285,7 @@
 
 .row .button-assertive {
   background-color: red;
-  width: 120px;
+  width: 100px;
 
   font-weight: 600;
   font-size: 20px;
