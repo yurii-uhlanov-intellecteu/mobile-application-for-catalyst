@@ -80,11 +80,11 @@
   box-shadow: 3px 3px 18px 1px #dcdcdc;
 }
 
-.login100-form-btn:hover { 
+.login100-form-btn:hover {
   background-color: rgb(47, 119, 57);
 }
 
-.login100-form-btn:target { 
+.login100-form-btn:target {
   background-color: rgb(70, 70, 70);
 }
 
@@ -114,7 +114,7 @@
   width: 75%;
   margin-bottom: 30px;
   white-space: nowrap;
-  
+
 }
 
 
@@ -136,7 +136,7 @@
   top: 0;
   width: 100%;
 
-  overflow: hidden; 
+  overflow: hidden;
   box-shadow: 0px 3px 8px 1px #dcdcdc;
   height: 60px;
 }
@@ -178,7 +178,7 @@
 
 .status-box {
   width: 20px;
-  
+
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   transition: linear 200ms;
@@ -213,13 +213,13 @@
 
 .status-box p {
   color: white;
-  
+
   margin: auto;
 }
 
 .status-indent {
   min-width: 30px;
-  
+
 }
 
 .status {
@@ -270,7 +270,7 @@
   padding-right: 20px;
   margin-top: -10px;
   cursor: pointer;
-} 
+}
 
 .row .button-balanced {
   background-color: green;

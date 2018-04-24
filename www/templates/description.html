@@ -1,0 +1,44 @@
+<ion-view>
+        <div class = "bar bar-header bar-light bar-block">
+                <button class = "button icon ion-chevron-left" ng-click="goBack()"></button>
+                <h1 class = "title">Transaction {{transaction.payment_id}}</h1>
+        </div>
+        <ion-view title="Transactions">
+                <ion-content class = "padding has-header">
+                        <div id = "cards" >
+                            <div class = "card list" id = "card{{transaction.payment_id}}">
+                                <div class = "item item-divider">
+                                    Created on {{transaction.created_at}}
+                                </div>
+                                <div class = "item item-text-wrap">
+                                    <p>
+                                        Car {{transaction.car_id}} has gone: {{transaction.miles}}
+                                    </p>
+                                    <p>
+                                        Premium is: {{transaction.price}}
+                                    </p>
+                                    <p>
+                                        Status is: 
+                                        <b id = "status">
+                                            {{transaction.status}}
+                                        </b>
+                                    <p>
+                                </div>
+                                <div class = "item item-divider item-block" id = "decisionButtons"
+                                style = "display: {{transaction.status == 'NEW' ? 'block' : 'none'}}">
+                                    
+                                    <div class = "row">
+                                        <div class = "col">
+                                            <button id="update" class="button button-block button-balanced icon ion-checkmark-round" ng-click="approve()"></button>
+                                        </div>
+                                        <div class = "col">
+                                            <button id="update" class="button button-block button-assertive icon ion-close-round" ng-click="reject()"></button>                                            
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                </ion-content>
+        </ion-view>
+    </ion-view>
+    
