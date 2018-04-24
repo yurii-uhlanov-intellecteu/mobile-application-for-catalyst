@@ -202,7 +202,6 @@ angular.module('Catalyst', ['ionic'])
       response = processResponse(xmlHttp)
       document.getElementById("loginBtn").disabled = false;
       if (response.status != 200) {
-        alert("Wrong email or password")
         $state.go('login');
       }
       else {
