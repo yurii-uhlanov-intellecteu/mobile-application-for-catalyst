@@ -77,7 +77,7 @@ function makeCard(transaction) {
     + '</div>'
     + '<div class="data-box">'
       + '<div class="header">'
-        + '<h4>Created at: ' + transaction.created_at + '</h4>'
+        + '<h4>' + transaction.created_at + '</h4>'
       + '</div>'
       + '<div class="body">'
         + '<div class="body-always">'
