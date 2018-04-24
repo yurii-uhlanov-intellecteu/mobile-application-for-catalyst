@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "app_id": "5d4e3e5d",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
